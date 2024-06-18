@@ -16,17 +16,17 @@ public class EditBuku {
         try (Connection conn = koneksi.getConnection()) {
             System.out.print("Masukkan ID Buku yang akan diedit: ");
             int idBuku = scanner.nextInt();
-            scanner.nextLine(); // consume newline character after nextInt()
+            scanner.nextLine(); 
 
             if (cekBukuAda(conn, idBuku)) {
                 System.out.print("Judul Buku baru: ");
                 String judul_buku = scanner.nextLine();
                 System.out.print("Tahun Terbit baru: ");
                 int tahun_terbit = scanner.nextInt();
-                scanner.nextLine(); // consume newline character after nextInt()
+                scanner.nextLine(); 
                 System.out.print("Stok baru: ");
                 int stok = scanner.nextInt();
-                scanner.nextLine(); // consume newline character after nextInt()
+                scanner.nextLine(); 
                 System.out.print("Nama Penulis baru: ");
                 String penulis = scanner.nextLine();
 
@@ -56,7 +56,7 @@ public class EditBuku {
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setInt(1, idBuku);
 
-            return ps.executeQuery().next(); // true if exists, false if not
+            return ps.executeQuery().next(); 
 
         } catch (SQLException e) {
             e.printStackTrace();

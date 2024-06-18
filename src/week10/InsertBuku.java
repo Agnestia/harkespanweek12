@@ -18,10 +18,10 @@ public class InsertBuku {
             String judul_buku = scanner.nextLine();
             System.out.print("Tahun Terbit: ");
             int tahun_terbit = scanner.nextInt();
-            scanner.nextLine(); // consume newline character after nextInt()
+            scanner.nextLine(); 
             System.out.print("Stok: ");
             int stok = scanner.nextInt();
-            scanner.nextLine(); // consume newline character after nextInt()
+            scanner.nextLine(); 
             System.out.print("Nama Penulis: ");
             String penulis = scanner.nextLine();
 

@@ -30,7 +30,6 @@ public class DeleteBuku {
 
     public static boolean deleteBuku(Connection conn, int idBuku) {
         try {
-            // Check if the book exists
             if (!cekBukuAda(conn, idBuku)) {
                 return false;
             }

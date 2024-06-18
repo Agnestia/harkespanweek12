@@ -15,7 +15,7 @@ public class Main {
             System.out.println("5. Keluar");
             System.out.print("Pilih opsi: ");
             int pilihan = scanner.nextInt();
-            scanner.nextLine(); // consume newline character after nextInt()
+            scanner.nextLine();
 
             switch (pilihan) {
                 case 1:
